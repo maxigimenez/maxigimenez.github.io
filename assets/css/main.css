@@ -1,0 +1,100 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+
+body {
+    background-color: #F2F5F6;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0px;
+}
+a {
+    color: #0B99D9;
+}
+h1, h2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+span {
+    color: #0B99D9;
+}
+header {
+    background-color: #F2F5F6;
+    padding: 20px 0;
+}
+main {
+    background-color: #262F39;
+    /*-webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY(-2deg);*/
+}
+main section {
+    -webkit-transfo/*rm: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+    transform: skew*/Y(2deg);
+    color: #FFFFFF;
+    padding-top: 40px;
+}
+.fix {
+    width: 100%;
+    height: 50px;
+    background-color: #262F39;
+    /*-webkit-transform: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+    transform: skewY(2deg);*/
+    position: absolute;
+    margin-top: -23px;
+}
+.hello {
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.bio {
+    text-align: justify;
+}
+.information li,
+.social li {
+    margin-bottom: 2px;
+}
+.experience li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.experience .name,
+.experience .title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.experience .dates,
+.experience .where,
+.experience .remote {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+.skills,
+.projects {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.skills li {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+.projects a {
+    font-size:15px;
+}
+.projects li {
+    margin-bottom: 5px;
+}
+.fa {
+    font-weight: 700;
+    line-height: 1;
+    width: 20px;
+}
