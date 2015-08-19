@@ -1,0 +1,283 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+a,
+a:hover,
+a:active {
+    color: #0B99D9;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+#top {
+    background: #0B99D9;
+    width: 100%;
+    height: 40px;
+}
+
+.social > a {
+    color: #fff;
+    font-size: 20px;
+    margin: 6px 15px 0 0;
+    float: left;
+}
+
+.export {
+    float: right;
+    margin: 8px 0 0 0;
+}
+
+.export a {
+    color: #fff;
+    font-size: 16px;
+}
+
+#header {
+    width: 100%;
+    height: 340px;
+    float: left;
+    background-image: url(/static/images/nyc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.header-overlay {
+    width: 100%;
+    height: 340px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(38, 47, 57, 0.6);
+}
+
+#me {
+    margin-top: 25px;
+}
+
+#me #profile {
+    width: 179px;
+    height: 179px;
+    background-image: url(/static/images/me.png);
+    margin: 0 auto 10px;
+}
+
+#me h1,
+#me h2 {
+    margin: 0px;
+    padding: 0px;
+    color: #FFF;
+    font-weight: 400;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.3;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+}
+
+#me h2 {
+    font-size: 20px;
+}
+
+#me .contact {
+    text-align: center;
+    border-top: 1px solid #DBE3E6;
+    margin: 10px 0 0 0;
+}
+
+#me .contact a,
+#me .contact span {
+    color: #FFF;
+    font-size: 28px;
+    padding: 0 10px;
+}
+
+.skills-box {
+    margin: 25px 0 0 0;
+}
+
+.me-instagram-photos {
+    margin-top: 30px;
+}
+
+.me-instagram-photo {
+    padding: 0px;
+}
+
+.me-instagram-photo img{
+    width: 100%;
+}
+
+#about h1 {
+    margin: 30px 0 20px;
+}
+
+#experience {
+    float: left;
+    width: 100%;
+    margin: 25px 0 15px;
+    background-color: #242E39;
+    color: #FFF;
+    padding-bottom: 20px;
+}
+
+#experience h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#experience .company {
+    border-right: 1px solid rgba(11, 153, 217, 0.2);
+    border-bottom: 1px solid rgba(11, 153, 217, 0.2);
+    padding: 15px;
+    position: relative;
+    min-height: 226px;
+}
+
+#experience .company.extra {
+    padding-top: 80px;
+}
+
+#experience .company .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(11, 153, 217, 0.6);
+    z-index: 1000;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+
+#experience .company .overlay:before {
+    font-family: "FontAwesome";
+    content: "\f196";
+    width: 100%;
+    height: 100%;
+    font-size: 5.0em;
+    text-align: center;
+    display: block;
+    padding-top: 60px;
+}
+
+#experience .company:hover .overlay{
+    opacity: 1;
+}
+
+#experience .company img {
+    margin-bottom: 15px;
+}
+
+#experience .company:nth-child(4n+1) {
+    border-right: 0px;
+}
+
+#experience .company:nth-child(n+6) {
+    border-bottom: 0px;
+}
+
+#more {
+    float: left;
+    width: 100%;
+    background-color: #E9E9E9;
+    padding-bottom: 20px;
+}
+
+#more h1 {
+    margin: 30px 0 20px;
+}
+
+#skills {
+    margin-bottom: 25px;
+}
+
+#skills h3 {
+    margin-bottom: 15px;
+}
+
+#skills .skill-percent {
+    float: right;
+}
+
+#skills .skill-bar {
+    color: #FFF;
+    margin-bottom: 5px;
+    padding: 2px 8px;
+    width: 100%;
+
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+       -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+#more h1 {
+    margin-bottom: 20px;
+}
+
+#more .project {
+    height: 120px;
+    border-right: 1px solid rgba(11, 153, 217, 0.2);
+    border-bottom: 1px solid rgba(11, 153, 217, 0.2);
+    padding: 10px 15px;
+}
+
+#more .project:nth-child(4n+1) {
+    border-right: 0px;
+}
+
+#more .project:nth-child(n+6) {
+    border-bottom: 0px;
+}
+
+#more .project i {
+    font-size: 35px;
+    color: #0B99D9;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+#more .project a {
+    font-size: 18px;
+}
+
+#more .project .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(11, 153, 217, 0.3);
+    z-index: 1000;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+
+#more .project .overlay:before {
+    font-family: "FontAwesome";
+    content: "\f196";
+    width: 100%;
+    height: 100%;
+    font-size: 5.0em;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    color: #FFF;
+}
+
+#more .project:hover .overlay{
+    opacity: 1;
+}

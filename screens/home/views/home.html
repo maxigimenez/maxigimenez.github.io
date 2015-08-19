@@ -1,0 +1,184 @@
+<div id="top">
+    <div class="container-fluid">
+        <div class="social">
+            <a href="https://github.com/maxigimenez" target="_blank"><i class="fa fa-github-alt"></i></a>
+            <a href="https://linkedin.com/in/maxigimenez/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://angel.co/maxigimenez" target="_blank"><i class="fa fa-angellist"></i></a>
+            <a href="https://facebook.com/gimenez.maxi" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/gmaxi_" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://instagram.com/gmaxi_/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://open.spotify.com/user/maxigimenez" target="_blank"><i class="fa fa-spotify"></i></a>
+        </div>
+        <!-- <div class="export">
+            <a href ng-click="export()">this.export('pdf');</a>
+        </div> -->
+    </div>
+</div>
+<div id="header">
+    <div class="header-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4" id="me">
+                <div id="profile"></div>
+                <h1>Maxi Gimenez</h1>
+                <h2>Senior Front-end Engineer</h2>
+
+                <div class="contact">
+                    <a
+                        href="mailto:gimenez.maxi@gmail.com"
+                        title="Stay in touch!"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        me-tooltip>
+                        <i class="fa fa-inbox"></i>
+                    </a>
+                    <span
+                        title="Copenhagen :)"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        me-tooltip><i class="fa fa-map-marker"></i></span>
+                    <a
+                        href="https://github.com/maxigimenez"
+                        target="_blank"
+                        title="I <3 github!"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        me-tooltip>
+                        <i class="fa fa-github-alt"></i>
+                    </a>
+                    <span
+                        title="Apple fanboy!"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        me-tooltip><i class="fa fa-apple"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" id="about">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>this.about();</h1>
+
+            <p>My name is Maximiliano Gimenez, I'm from Córdoba, Argentina, but now I'm living in Copenhagen, Denmark. I have 25 years old and become a developer ~7 years ago learning HTML/CSS from that until today I found something that I love/enjoy and each day I try to improve myself learning and trying new stuff. <br /><br />
+
+            Now I'm working as a Senior front-end engineer at Falcon Social, on my free time I read about JavaScript (now obsessed with Angular 2) and do iOS apps for myself (just to kill time), besides tech stuffs, I'm a big football fun and travel to explore cool places.</p>
+        </div>
+        <div class="col-md-4 me-instagram-photos">
+            <div class="col-md-4 me-instagram-photo" ng-repeat="item in photos">
+                <a href="{{ ::item.link }}" target="_blank"><img ng-src="{{ ::item.images.thumbnail.url }}" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="experience">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>this.experience();</h1>
+
+                <div class="col-md-3 text-center company"
+                    ng-repeat="item in experience"
+                    ng-class="{
+                        'extra': !item.image
+                    }">
+                    <div class="overlay" ng-click="goTo(item.link)" ng-if="item.link"></div>
+                    <img ng-if="item.image" ng-src="{{ ::item.image }}" class="img-rounded" width="100" />
+                    <div class="content text-left">
+                        {{ ::item.position }} at <a href>{{ ::item.company }}</a><br/>
+                        <i class="glyphicon glyphicon-calendar"></i> {{ ::item.dates }}<br/>
+                        <i class="glyphicon glyphicon-map-marker"></i> {{ ::item.location }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="skills">
+    <div class="row">
+        <div
+            ng-repeat="item in skills"
+            class="col-md-4">
+
+            <h3>{{ item.title }}</h3>
+
+            <ul class="list-unstyled">
+                <li ng-repeat="skill in item.data"
+                    class="skill-bar"
+                    ng-style="{
+                        'width': '{{ ::skill.percent }}%',
+                        'background-color': skill.color
+                    }">
+                    <span>{{ ::skill.name }}</span>
+                    <span class="skill-percent">{{ ::skill.percent }}%</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div id="more">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>this.projects();</h1>
+
+                <div class="col-md-3 text-center project"
+                    ng-repeat="item in projects">
+                    <div class="overlay" ng-click="goTo(item.link)"></div>
+                    <i class="fa fa-code"></i><br/>
+                    <div class="text-left">
+                        <a href>{{ ::item.name }}</a><br />
+                        <span>{{ ::item.description }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+<div id="more">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>this.projects();</h1>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="http://maxigimenez.github.io/angular-atomic-notify/" target="_blank"><i class="fa fa-code"></i> angular-atomic-notify</a> - Atomic growl notifications for angular.js applications
+                    </li>
+                    <li>
+                        <a href="https://github.com/maxigimenez/heroku-statics-runner" target="_blank"><i class="fa fa-code"></i> heroku-statics-runner</a> - Running statics using node in Heroku instance
+                    </li>
+                    <li>
+                        <a href="https://github.com/maxigimenez/github-notify-node" target="_blank"><i class="fa fa-code"></i> github-notify-node</a> - Fetch pull request of an specific user and repository
+                    </li>
+                    <li>
+                        <a href="https://github.com/maxigimenez/request" target="_blank"><i class="fa fa-code"></i> request</a> - Ajax wrapper
+                    </li>
+                    <li>
+                        <a href="https://github.com/maxigimenez/API-CRUD-Angular" target="_blank"><i class="fa fa-code"></i> API-CRUD-Angular</a> - Automated API CRUD in Angular
+                    </li>
+                    <li>
+                        <a href="https://github.com/maxigimenez/gvdown" target="_blank"><i class="fa fa-code"></i> gvdown</a> - Grooveshark songs downloader
+                    </li>
+                    <li>
+                        <a href="https://github.com/maxigimenez/keepit" target="_blank"><i class="fa fa-code"></i> keepit</a> - localStorage wrapper with expiration time
+                    </li>
+                    <li>
+                        <a href="https://github.com/maxigimenez/github-notify" target="_blank"><i class="fa fa-code"></i> github-notify</a> - chrome extension to watch the open issues of Github's repositories
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h1>this.funny();</h1>
+            </div>
+        </div>
+    </div>
+</div>
+ -->

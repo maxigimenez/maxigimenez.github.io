@@ -1,0 +1,31 @@
+[
+    {
+        "name": "angular-atomic-notify",
+        "link": "http://maxigimenez.github.io/angular-atomic-notify/",
+        "description": "Atomic growl notifications for angular.js applications"
+    },{
+        "name": "heroku-statics-runner",
+        "link": "https://github.com/maxigimenez/heroku-statics-runner",
+        "description": "Running statics using node in Heroku instance"
+    },{
+        "name": "github-notify-node",
+        "link": "https://github.com/maxigimenez/github-notify-node",
+        "description": "Fetch pull request of an specific user and repository"
+    },{
+        "name": "request",
+        "link": "https://github.com/maxigimenez/request",
+        "description": "Ajax wrapper"
+    },{
+        "name": "API-CRUD-Angular",
+        "link": "https://github.com/maxigimenez/API-CRUD-Angular",
+        "description": "Automated API CRUD in Angular"
+    },{
+        "name": "keepit",
+        "link": "https://github.com/maxigimenez/keepit",
+        "description": "localStorage wrapper with expiration time"
+    },{
+        "name": "github-notify",
+        "link": "https://github.com/maxigimenez/github-notify",
+        "description": "chrome extension to watch the open issues of Github's repositories"
+    }
+]
